@@ -1,0 +1,6 @@
+This demonstrates some more functionality of the "fortran interface" routines
+(those defined in fortran_interface.cc, although they actually invoke the TreeManager,
+which is entirely c++). The makefile is a little more fleshed out in order to make
+things more explicit and allow the user some more control.
+Originally this was going to be an analysis script, but it turned out to be unsuitable,
+so it's probably more verbose than it needs to be.

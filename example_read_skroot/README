@@ -1,0 +1,7 @@
+This is a very minimal demonstrator of reading SKROOT files.
+It uses a TreeManager to open an SKROOT file and make a wrapper class,
+retrieving pointers to the created objects. It then retrieves the TTree*
+and uses it to loop over TTree entries directly.
+Mainly it demonstrates the most minimal makefile, which uses implicit rules
+defined in $(SKOFL_ROOT)/config.gmk to build the executable with the
+necessary dependencies.

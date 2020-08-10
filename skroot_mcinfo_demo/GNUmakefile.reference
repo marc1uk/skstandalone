@@ -1,0 +1,29 @@
+#
+# In case of building locally, set SKOFL_ROOT variable 
+#      setenv SKOFL_ROOT   ... 
+#  or directly set in this makefile 
+#SKOFL_ROOT = /skofl
+#
+#Note: it should change into csh so that the makefile can compile
+
+include    $(SKOFL_ROOT)/config.gmk
+
+LOCAL_INC	= -Iinclude
+#LOCAL_LIBS	= -lsklowe_7.0 -lsollib_4.0 -lwtlib_5.1 -lbonsai_3.3 -lstmu -lska
+
+#NOTE: stmu & ska are ATMPD lib, see /home/atmpd/skrep/09e
+
+#
+#  Objects
+#
+
+OBJS   = show_neutrons
+
+all: $(OBJS) 
+	$(RM) *.o *~
+
+clean: 
+	$(RM) *.o *~ core fort.* $(OBJS)
+
+install.exec: 
+
